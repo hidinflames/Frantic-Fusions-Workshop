@@ -411,7 +411,7 @@ document.getElementById("spe").innerHTML=""+avgspe+"";
 
 let oldwt1 = document.getElementById("oldwt1").value;
 let oldwt = document.getElementById("oldwt").value;
-let avgwt = Math.round(+oldwt1 + oldwt/4);
+let avgwt = (Math.round(((+oldwt1 + +oldwt)/2)*100))/100;
 document.getElementById("wt").innerHTML=""+avgwt+"";
 
 let modhp = +hp - +avghp;
