@@ -375,7 +375,7 @@ type2 = ", &quot;"+type2+"&quot;],";
 }
 let oldhp1 = document.getElementById("oldhp1").value;
 let oldhp = document.getElementById("oldhp").value;
-let avghp = Math.floor(+oldhp1)+ +(oldhp)- -(oldhp)
+let avghp = Math.floor(+oldhp1)+ +(oldhp-oldhp)
 document.getElementById("avghp").innerHTML=""+avghp+"";
 document.getElementById("hp").innerHTML=""+avghp+"";
 
@@ -411,7 +411,7 @@ document.getElementById("spe").innerHTML=""+avgspe+"";
 
 let oldwt1 = document.getElementById("oldwt1").value;
 let oldwt = document.getElementById("oldwt").value;
-let avgwt = (Math.round(((+oldwt1 + +oldwt)/2)*100))/100;
+let avgwt = (Math.round(((+oldwt1 + +oldwt)/4)*100))/100;
 document.getElementById("wt").innerHTML=""+avgwt+"";
 
 let modhp = +hp - +avghp;
