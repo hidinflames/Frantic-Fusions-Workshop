@@ -373,6 +373,12 @@ if (type2==="") {type2 = "],";
 else {
 type2 = ", &quot;"+type2+"&quot;],";
 }
+let oldhp1 = document.getElementById("oldhp1").value;
+let oldhp = document.getElementById("oldhp").value;
+let avghp = Math.floor(+oldhp1);
+document.getElementById("avghp").innerHTML=""+avghp+"";
+document.getElementById("hp").innerHTML=""+avghp+"";
+
 let oldatk1 = document.getElementById("oldatk1").value;
 let oldatk = document.getElementById("oldatk").value;
 let avgatk = Math.floor(+oldatk1)+ +(oldatk/4);
